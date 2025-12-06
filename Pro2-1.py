@@ -1,5 +1,5 @@
 #%pip install langchain-ollama
-pip install -r requirements.txt
+%pip install -r requirements.txt
 
 from langchain_ollama import ChatOllama
 import streamlit as st
@@ -35,4 +35,5 @@ if text:
     ai_msg = llm.invoke(input_msg)
 
     st.write(ai_msg.content)
+
 
