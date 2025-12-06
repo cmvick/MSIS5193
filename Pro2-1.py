@@ -1,4 +1,5 @@
 #%pip install langchain-ollama
+pip freeze > requirements.txt
 
 from langchain_ollama import ChatOllama
 import streamlit as st
@@ -32,4 +33,5 @@ if text:
         input_msg = prompt + text
     st.header('AI Response:')
     ai_msg = llm.invoke(input_msg)
+
     st.write(ai_msg.content)
