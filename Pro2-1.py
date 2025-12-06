@@ -4,7 +4,7 @@ from langchain_ollama import ChatOllama
 import streamlit as st
 import fitz
 
-llm = ChatOllama(model = 'llama3.2:1b', temperature = 0) 
+llm = ChatOllama(model = 'llama3.2', temperature = 0) 
 # temperature is a common parameter from 0 to 1 that allows llm to be more verbose.
 # example llm = ChatOllama(model = 'llama3', temperature = 1) ... I think 
 
@@ -34,6 +34,7 @@ if text:
     ai_msg = llm.invoke(input_msg)
 
     st.write(ai_msg.content)
+
 
 
 
