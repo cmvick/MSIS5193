@@ -1,3 +1,4 @@
 langchain-ollama
 PyMuPDF
+ollama == 3.2:1b
 
