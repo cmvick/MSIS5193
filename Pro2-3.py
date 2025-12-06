@@ -2,7 +2,7 @@
 #pip install langchain_groq
 #pip install fritz
 
-from langchain-groq import ChatGroq
+from langchain_groq import ChatGroq
 import streamlit as st
 import fitz
 
@@ -38,4 +38,5 @@ if text:
         input_msg = prompt + text
     st.header('AI Response:')
     ai_msg = llm.invoke(input_msg)
+
     st.write(ai_msg.content)
