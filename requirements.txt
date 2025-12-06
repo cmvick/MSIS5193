@@ -1,4 +1,7 @@
 langchain-ollama
+langchain-groq
+fitz
 PyMuPDF
 streamlit
 httpx
+
